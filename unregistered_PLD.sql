@@ -1,5 +1,5 @@
-/*select * from 
-(*/select 
+select * from 
+(select 
 	count(sample) cnt,
 	owners.name,
 round(avg(
@@ -37,5 +37,5 @@ and samples.sample_state<>4
 and owners.active=1
 group by owners.name,state
 order by state asc,cnt desc, owners.name asc
-/*) aa
-where state = "Not recorded"*/;
+) aa
+where state = "Not recorded";
