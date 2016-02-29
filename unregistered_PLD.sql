@@ -38,4 +38,5 @@ and owners.active=1
 group by owners.name,state
 order by state asc,cnt desc, owners.name asc
 ) aa
-where state = "Not recorded";
+#where state = "Not recorded";
+where score<5
